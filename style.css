@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 38px;
+  letter-spacing: -0.05em;
+  text-align: center;
+  transition: 0.5s;
+}
+
+body.darkMode {
+  background-color: #dfdfde;
+}
+
+.container {
+  width: 55rem;
+  height: 55rem;
+  background-color: #fbf7ee;
+}
+
+.top {
+  background: linear-gradient(246.26deg, #585dfe 0%, #fb3796 100%);
+  padding: 5rem;
+  height: 26rem;
+  width: 100%;
+  color: #fff;
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 6.4rem;
+}
+
+h3 + span {
+  font-size: 10rem;
+  /* font-weight: ; */
+}
+
+.bottom {
+  padding: 1.5em 10.2rem;
+  position: relative;
+  transition: 0.5s;
+}
+
+div.darkMode {
+  background-color: #1f2937;
+  color: #fff;
+}
+div.darkMode p {
+  color: #d2d2d2;
+}
+
+.darkModeSetup {
+  position: absolute;
+  right: 4rem;
+  top: 1rem;
+}
+label {
+  width: 5rem;
+  height: 2rem;
+  display: block;
+  background-color: #3a3845;
+  border-radius: 3rem;
+  position: relative;
+}
+#darkMode {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+span.toggle {
+  position: absolute;
+  widows: 100%;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 3rem;
+}
+span.toggle:before {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  background: #eee;
+  border-radius: 50%;
+  top: 0rem;
+  left: -2.5rem;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.21) 0px 0px 7px 1px;
+}
+#darkMode:checked + span.toggle:before {
+  transform: translateX(3.5rem);
+}
+
+.unit {
+  margin-bottom: 0.5rem;
+}
+
+.unit h4 {
+  font-weight: 400;
+}
+
+.unit p {
+  font-weight: 300;
+}
