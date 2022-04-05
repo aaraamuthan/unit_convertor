@@ -39,21 +39,35 @@ body.darkMode {
   height: 26rem;
   width: 100%;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 h3 {
   font-size: 2.2rem;
   font-weight: 500;
-  margin-bottom: 6.4rem;
+  margin-bottom: 1.5rem;
 }
 
-h3 + span {
-  font-size: 10rem;
+input[type="number"] {
+  /* background-color: #ccc; */
+  outline: none;
+  border: none;
+  font-size: 2rem;
+  text-align: center;
+  width: 30%;
+}
+
+.top p {
+  font-size: 5rem;
   /* font-weight: ; */
 }
 
 .bottom {
-  padding: 1.5em 10.2rem;
+  padding: 1.5em;
   position: relative;
   transition: 0.5s;
 }
